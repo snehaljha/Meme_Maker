@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/black_gola"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:onClick="colorSelect"
+            app:srcCompat="@mipmap/black_gola"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/white_gola"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:onClick="colorSelect"
+            app:srcCompat="@mipmap/white_gola"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/blue_gola"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:onClick="colorSelect"
+            app:srcCompat="@mipmap/blue_gola"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/green_gola"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:onClick="colorSelect"
+            app:srcCompat="@mipmap/green_gola"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/red_gola"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:onClick="colorSelect"
+            app:srcCompat="@mipmap/red_gola"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/brown_gola"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:onClick="colorSelect"
+            app:srcCompat="@mipmap/brown_gola"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="0"
+            android:text="@string/textsize"
+            android:textSize="18sp" />
+
+        <SeekBar
+            android:id="@+id/size_sb"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:progress="18" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="text_1"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill,HardcodedText" />
+
+</LinearLayout>

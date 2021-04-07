@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Meme Maker</string>
+    <string name="select_template">Select Template</string>
+    <string name="set_text">Set Text</string>
+    <string name="send">Share</string>
+    <string name="textsize">TextSize</string>
+    <string name="search_template">Search Template</string>
+</resources>
